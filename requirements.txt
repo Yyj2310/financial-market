@@ -1,0 +1,7 @@
+akshare>=1.18.0
+streamlit>=1.61.0
+plotly>=6.0.0
+pandas>=2.2.0
+openpyxl>=3.1.0
+PyYAML>=6.0
+

@@ -1,0 +1,66 @@
+project:
+  name: "证券市场分析报告"
+  data_dir: "data"
+  report_dir: "reports"
+
+# 各类数据缓存的有效时长（小时）。超过后再次打开网页会自动联网刷新。
+cache_freshness_hours:
+  index_daily: 12
+  pe: 24
+  industry: 168
+  margin: 12
+  northbound: 12
+  bond_rate: 12
+  macro: 24
+  investor_stats: 168
+  etf_scale: 12
+  etf_spot: 12
+  new_funds: 24
+  repurchase: 24
+  new_stocks: 24
+  ipo_pipeline: 168
+  amount_snapshot: 12
+
+# 指数配置：key 为显示名称，value 为新浪财经日线代码
+indices:
+  上证指数: sh000001
+  深证成指: sz399001
+  创业板指: sz399006
+  沪深300: sh000300
+  上证50: sh000016
+  中证500: sh000905
+  中证1000: sh000852
+  科创50: sh000688
+  北证50: bj899050
+
+# 估值分位（乐咕乐股支持的上证系列指数）
+pe_indices:
+  上证50: 上证50
+  沪深300: 沪深300
+  中证500: 中证500
+  上证180: 上证180
+
+# 风格代理指数
+style:
+  大盘: 沪深300
+  小盘: 中证1000
+  成长: 创业板指
+  价值: 上证50
+
+# ETF 观察池（用于计算份额变化 = 资金流入代理）
+etf_watchlist:
+  510050: 上证50ETF
+  510300: 沪深300ETF
+  510500: 中证500ETF
+  159915: 创业板ETF
+  588000: 科创50ETF
+  512100: 中证1000ETF
+  512880: 证券ETF
+  512690: 酒ETF
+  512480: 半导体ETF
+  515030: 新能源车ETF
+  512010: 医药ETF
+  159928: 消费ETF
+  518880: 黄金ETF
+  511010: 国债ETF
+
